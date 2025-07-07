@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .card__image {
@@ -119,25 +120,26 @@ body {
 }
 
 /* share section */
-.card__share {
+#card-share {
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   right: 0;
   width: 100%;
   display: flex;
-  gap: 0.6rem;
+  gap: 1rem;
   align-items: center;
   background: var(--dark-greyish-blue);
   padding: 2rem;
   height: 70px;
   border-radius: 0 0 10px 10px;
   z-index: 0;
-  display: none;
+  transition: 0.2s;
 }
 
-.card__share.show {
+#card-share.show {
   display: flex;
+  bottom: 0;
 }
 
 .card__share-text {
@@ -158,4 +160,10 @@ body {
   height: 24px;
   background: var(--dark-greyish-blue);
   border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.card__share-option:hover {
+  opacity: 0.7;
 }
