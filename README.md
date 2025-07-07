@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-component-ZAOa_PuT_P](https://www.frontendmentor.io/solutions/article-preview-component-ZAOa_PuT_P)
 - Live Site URL: [https://front-mentor-article-preview-compon.vercel.app/](https://front-mentor-article-preview-compon.vercel.app/)
 
 ## My process
