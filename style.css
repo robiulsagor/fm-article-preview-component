@@ -25,7 +25,8 @@ body {
 }
 
 .card {
-  width: 350px;
+  width: 90%;
+  max-width: 350px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   background: #fff;
@@ -48,8 +49,15 @@ body {
 }
 
 .card__content {
-  padding: 2rem;
-  padding-bottom: 0;
+  padding: 1.5rem;
+  padding-bottom: 0rem;
+}
+
+@media screen and (min-width: 375px) {
+  .card__content {
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
 }
 
 .card__top {
@@ -79,7 +87,13 @@ body {
 .card__info {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  .card__info {
+    gap: 1.5rem;
+  }
 }
 
 .card__avatar {
@@ -100,6 +114,7 @@ body {
 }
 
 .card__author-date {
+  margin-top: 0.1rem;
   font-size: 0.8rem;
   color: var(--greyish-blue);
 }
